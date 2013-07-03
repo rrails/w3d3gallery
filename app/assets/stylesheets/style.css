@@ -1,0 +1,15 @@
+.image_size {
+height: 30%;
+width: 30%;
+margin: auto;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+.detail{
+display: block;
+margin : auto;
+}

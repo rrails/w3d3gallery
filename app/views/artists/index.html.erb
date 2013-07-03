@@ -1,0 +1,12 @@
+<div class = 'detail'>
+  <% @artists.each do |artist| %>
+    <ul>
+      <!-- <li><%= image_tag(artist.image, :class => 'image_size') %></li> -->
+      <!-- <li><%= link_to(artist.name, artist_path(artist.id), :class => 'artist' )%></li> -->
+      <li><%= link_to(artist.name, artist, :class => 'artist' )%></li>
+      <!-- <li><%= artist.nationality %></li> -->
+      <!-- <li><%= artist.dob.strftime('%B %d %y') %></li> -->
+      <!-- <li><%= artist.period %></li> -->
+    </ul>
+  <% end %>
+</div>

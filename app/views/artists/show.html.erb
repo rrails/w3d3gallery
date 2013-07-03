@@ -1,3 +1,4 @@
 <%= @artist %>
 <!-- the line below gives you the list to the artist you want to delete -->
 <%= link_to 'delete', @artist, :method => :delete %>
+<%= link_to 'edit', edit_artist_path(@artist) %>

@@ -19,9 +19,14 @@ class PaintingsController < ApplicationController
   end
 
   def edit
+    @painting = Painting.find(params[:id]) #get the painting and displays on screen
   end
 
   def update
+    painting = Painting.find(params[:id]) # after you hit submit updates get the item agains
+    binding.pry
+    painting.update_attributes(params[:painting]) #updates to database.
+    redirect_to(painting) #redirect to the same one to show that it has been updated.
   end
 
   def destroy
